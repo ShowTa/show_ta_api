@@ -1,24 +1,25 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## tool
+- rails(API mode)
+- react
+- webpack
 
-Things you may want to cover:
+## version
+- ruby : 2.4.1
+- rails : 5.1.1
+- node : 7.9.0
+- npm : 4.2.0
 
-* Ruby version
 
-* System dependencies
+## setup
+```
+$ bundle install
+$ bin/rails db:create
+$ bin/rails db:migrate
+$ cd client
+$ npm --prefix client install
+$ foreman start
+$ open http://localhost:4000
+```
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
