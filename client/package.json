@@ -21,6 +21,7 @@
   "dependencies": {
     "create-react-component": "0.0.4",
     "react": "^15.5.4",
-    "react-dom": "^15.5.4"
+    "react-dom": "^15.5.4",
+    "superagent": "^3.5.2"
   }
 }
