@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import { render } from 'react-dom';
 
 const REQUEST_URL = 'http://localhost:3000/articles';
@@ -36,6 +36,5 @@ export default class Articles extends Component {
       </ul>
     );
   }
-};
-
+}
 
