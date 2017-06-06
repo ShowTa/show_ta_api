@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { render } from 'react-dom';
 import Articles from './articles/articles';
 
 
-class App extends React.Component {
+class App extends Component {
   render() {
     return (
       <div>
