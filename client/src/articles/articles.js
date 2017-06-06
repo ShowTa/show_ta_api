@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
+import request from 'superagent';
 
 const REQUEST_URL = 'http://localhost:3000/articles';
 
@@ -16,12 +17,14 @@ export default class Articles extends Component {
   }
 
   fetchData() {
-    fetch(REQUEST_URL)
-      .then((response) => response.json())
-      .then((responseData) => {
+    request
+      .get(REQUEST_URL)
+      .end((err, res) => {
+        console.log(res.text);
+        console.log(res.body);
         this.setState({
-          data: responseData
-        })
+          data: res.body
+        });
       });
   }
 
