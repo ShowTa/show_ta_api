@@ -11,8 +11,9 @@ export default class Form extends Component {
     return (
       <div>
         <p>記事を入力</p>
-        <form action='/'>
+        <form action='/' method='POST'>
           <input type='text' />
+          <button type='submit'>a</button>
         </form>
       </div>
     );
