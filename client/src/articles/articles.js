@@ -20,8 +20,6 @@ export default class Articles extends Component {
     request
       .get(REQUEST_URL)
       .end((err, res) => {
-        console.log(res.text);
-        console.log(res.body);
         this.setState({
           data: res.body
         });
