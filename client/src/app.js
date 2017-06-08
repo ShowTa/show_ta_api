@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 import Articles from './articles/articles';
 import Form from './articles/form';
@@ -22,9 +22,11 @@ class App extends Component {
 render ((
   <Router>
     <div>
-      <Route path='/' component={App} />
-      <Route path='/articles/' component={Articles} />
-      <Route path='/form' component={Form} />
+      <Switch>
+        <Route exact path='/' component={App} />
+        <Route path='/articles/' component={Articles} />
+        <Route path='/form' component={Form} />
+      </Switch>
     </div>
   </Router>
   ), document.getElementById('app')
