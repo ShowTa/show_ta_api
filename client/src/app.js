@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { render } from 'react-dom';
 import { HashRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
+import Header from './layout/header';
+import Footer from './layout/footer';
 import Articles from './articles/articles';
 import Form from './articles/form';
 
@@ -22,11 +24,13 @@ class App extends Component {
 render ((
   <Router>
     <div>
+      <Header />
       <Switch>
         <Route exact path='/' component={App} />
         <Route path='/articles' component={Articles} />
         <Route path='/form' component={Form} />
       </Switch>
+      <Footer />
     </div>
   </Router>
   ), document.getElementById('app')
