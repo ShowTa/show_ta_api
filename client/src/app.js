@@ -7,20 +7,6 @@ import Footer from './layout/footer';
 import Articles from './articles/articles';
 import Form from './articles/form';
 
-class App extends Component {
-  render() {
-    return (
-      <div>
-        <ul>
-          <li><Link to='/'>root</Link></li>
-          <li><Link to='/articles'>article</Link></li>
-          <li><Link to='/form'>test link</Link></li>
-        </ul>
-      </div>
-    );
-  }
-}
-
 render ((
   <Router>
     <div>
@@ -28,7 +14,6 @@ render ((
       <Switch>
         <div className='content'>
           <Route exact path='/' component={Articles} />
-          <Route path='/articles' component={Articles} />
           <Route path='/form' component={Form} />
         </div>
       </Switch>
