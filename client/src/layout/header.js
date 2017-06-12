@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
+import { HashRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 export default class Header extends Component {
   constructor(props) {
@@ -13,7 +14,9 @@ export default class Header extends Component {
         <span className='header__title'>Show_Ta</span>
         <div className='header__list'>
           <ul>
-            <li className='header__list__create-article'>New</li>
+            <li className='header__list__create-article'>
+              <Link to='/form'>New</Link>
+            </li>
           </ul>
         </div>
       </header>
