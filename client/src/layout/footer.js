@@ -10,7 +10,7 @@ export default class Footer extends Component {
   render() {
     return (
       <footer className='footer'>
-        footer
+        <p className='footer__copyright'>© 2017 Show_Ta</p>
       </footer>
     );
   }
