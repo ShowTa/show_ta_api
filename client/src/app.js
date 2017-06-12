@@ -27,7 +27,7 @@ render ((
       <Header />
       <Switch>
         <div className='content'>
-          <Route exact path='/' component={App} />
+          <Route exact path='/' component={Articles} />
           <Route path='/articles' component={Articles} />
           <Route path='/form' component={Form} />
         </div>
