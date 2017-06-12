@@ -10,7 +10,7 @@ export default class Header extends Component {
   render() {
     return (
       <header className='header'>
-        header
+        <span className='header__title'>Show_Ta</span>
       </header>
     );
   }
