@@ -3,7 +3,21 @@
   top: 0;
   width: 100vw;
   height: $header_height;
-  font-size: 50px;
   background-color: $main_color;
+
+  &__title {
+    font-size: 50px;
+  }
+
+  &__list {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+
+    &__create-article {
+      font-size: 20px;
+      line-height: $header_height;
+    }
+  }
 }
 
