@@ -16,5 +16,6 @@
 .byebug_history
 
 /client/node_modules
-/client/www/bundle.js
+/client/www/*
+!/client/www/index.html
 
