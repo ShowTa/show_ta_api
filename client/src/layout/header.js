@@ -11,6 +11,11 @@ export default class Header extends Component {
     return (
       <header className='header'>
         <span className='header__title'>Show_Ta</span>
+        <div className='header__list'>
+          <ul>
+            <li className='header__list__create-article'>New</li>
+          </ul>
+        </div>
       </header>
     );
   }
