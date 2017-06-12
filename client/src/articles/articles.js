@@ -28,13 +28,18 @@ export default class Articles extends Component {
 
   render() {
     return (
-      <ul>
-        {this.state.data.map((item) => {
-          return(
-            <li key={item.id}>{item.title}</li>
-          );
-        })}
-      </ul>
+      <div className='articles'>
+        <ul>
+          {this.state.data.map((item) => {
+            return(
+              <div className='article'>
+                <li className='article__title' key={item.id}>{item.title}</li>
+                <li className='article__content'>{item.content}</li>
+              </div>
+            );
+          })}
+        </ul>
+      </div>
     );
   }
 }
