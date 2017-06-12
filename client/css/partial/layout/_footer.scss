@@ -3,5 +3,11 @@
   bottom: 0;
   width: 100vw;
   height: $footer_height;
+  text-align: center;
   background-color: $main_color;
+
+  &__copyright {
+    margin-top: 10px;
+    font-size: 15px;
+  }
 }
