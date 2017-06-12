@@ -26,9 +26,11 @@ render ((
     <div>
       <Header />
       <Switch>
-        <Route exact path='/' component={App} />
-        <Route path='/articles' component={Articles} />
-        <Route path='/form' component={Form} />
+        <div className='content'>
+          <Route exact path='/' component={App} />
+          <Route path='/articles' component={Articles} />
+          <Route path='/form' component={Form} />
+        </div>
       </Switch>
       <Footer />
     </div>
