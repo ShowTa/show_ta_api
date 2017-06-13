@@ -18,4 +18,5 @@
 /client/node_modules
 /client/www/*
 !/client/www/index.html
+/client/.sass-cache
 
