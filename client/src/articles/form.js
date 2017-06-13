@@ -18,7 +18,7 @@ export default class Form extends Component {
       .post(REQUEST_URL)
       .send({title: title, content: content})
       .end((err, res) => {
-        console.log(res.body);
+        window.location.href = 'http://localhost:4000/';
       });
   }
 
