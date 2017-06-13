@@ -1,7 +1,8 @@
 @mixin calc($property, $expression) {
+  #{$property}: -webkit-calc(#{$expression});
   #{$property}: -moz-calc(#{$expression});
   #{$property}: -o-calc(#{$expression});
-  #{$property}: -webkit-calc(#{$expression});
+  #{$property}: -ms-calc(#{$expression});
   #{$property}: calc(#{$expression});
 }
 
