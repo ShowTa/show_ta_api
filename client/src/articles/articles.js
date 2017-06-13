@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
+import { HashRouter as Router, Link } from 'react-router-dom';
 import request from 'superagent';
 
 const REQUEST_URL = 'http://localhost:3000/articles';
@@ -33,8 +34,10 @@ export default class Articles extends Component {
           {this.state.data.map((item) => {
             return(
               <div className='article' key={item.id}>
-                <li className='article__title'>{item.title}</li>
-                <li className='article__content'>{item.content}</li>
+                <Link to='/article/detail'>
+                  <li className='article__title'>{item.title}</li>
+                  <li className='article__content'>{item.content}</li>
+                </Link>
               </div>
             );
           })}
