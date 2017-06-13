@@ -17,7 +17,6 @@
 $ bundle install
 $ bin/rails db:create
 $ bin/rails db:migrate
-$ cd client
 $ npm --prefix client install
 $ foreman start
 $ open http://localhost:4000
