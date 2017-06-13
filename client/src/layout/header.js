@@ -11,7 +11,7 @@ export default class Header extends Component {
   render() {
     return (
       <header className='header'>
-        <span className='header__title'>Show_Ta</span>
+        <h1 className='header__title'>Show_Ta</h1>
         <div className='header__list'>
           <ul>
             <li className='header__list__create-article'>
