@@ -1,19 +1,20 @@
 .articles {
-
-  ul {
-    text-align: center;
-  }
+  text-align: center;
 
   .article {
     display: inline-block;
     margin:   5px 10px;
     padding: 5px 10px;
     width: 200px;
+    text-align: left;
     border: 1px solid #000;
     border-radius: 10px;
-    @include border-box;
+    @include box_shadow(20px, 20px, 30px, #F00);
+    @include border_box;
 
     &__title {
+      padding-bottom: 10px;
+      font-size: 18px;
       font-weight: bold;
     }
 

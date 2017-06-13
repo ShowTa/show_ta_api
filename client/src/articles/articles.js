@@ -32,8 +32,8 @@ export default class Articles extends Component {
         <ul>
           {this.state.data.map((item) => {
             return(
-              <div className='article'>
-                <li className='article__title' key={item.id}>{item.title}</li>
+              <div className='article' key={item.id}>
+                <li className='article__title'>{item.title}</li>
                 <li className='article__content'>{item.content}</li>
               </div>
             );
