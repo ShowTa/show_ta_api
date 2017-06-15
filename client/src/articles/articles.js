@@ -34,7 +34,7 @@ export default class Articles extends Component {
           {this.state.data.map((item) => {
             return(
               <div className='article' key={item.id}>
-                <Link to='/articles/detail'>
+                <Link to={'/articles/' + item.id}>
                   <li className='article__title'>{item.title}</li>
                   <li className='article__content'>{item.content}</li>
                 </Link>

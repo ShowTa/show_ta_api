@@ -15,7 +15,7 @@ render ((
       <Switch>
         <div className='content'>
           <Route exact path='/' component={Articles} />
-          <Route path='/articles/detail' component={Detail} />
+          <Route path='/articles/:id' component={Detail} />
           <Route path='/form' component={Form} />
         </div>
       </Switch>
