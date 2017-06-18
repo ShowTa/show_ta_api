@@ -8,8 +8,9 @@
         text-align: left;
         border: 1px solid #000;
         border-radius: 10px;
-        @include box_shadow(20px, 20px, 30px, #F00);
-        @include border_box;
+        box-shadow: 2px 2px 5px #000;
+        box-sizing: border-box;
+
         &__title {
             padding-bottom: 10px;
             font-size: 18px;
