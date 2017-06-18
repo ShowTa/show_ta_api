@@ -28,7 +28,7 @@ export default class Form extends Component {
         <p>記事を入力</p>
         <input type='text' ref='title' />
         <textarea type='text' ref='content' />
-        <button type='submit' onClick={this.postData.bind(this)}>a</button>
+        <button type='submit' onClick={this.postData.bind(this)}>Send</button>
       </div>
     );
   }
