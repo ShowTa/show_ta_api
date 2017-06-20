@@ -5,6 +5,7 @@ import { HashRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import Header from './layout/header';
 import Footer from './layout/footer';
 import Articles from './articles/articles';
+import Detail from './articles/detail';
 import Form from './articles/form';
 
 render ((
@@ -14,6 +15,7 @@ render ((
       <Switch>
         <div className='content'>
           <Route exact path='/' component={Articles} />
+          <Route path='/articles/:id' component={Detail} />
           <Route path='/form' component={Form} />
         </div>
       </Switch>

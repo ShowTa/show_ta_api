@@ -11,7 +11,9 @@ export default class Header extends Component {
   render() {
     return (
       <header className='header'>
-        <h1 className='header__title'>Show_Ta</h1>
+        <Link to='/'>
+          <h1 className='header__title'>Show_Ta</h1>
+        </Link>
         <div className='header__list'>
           <ul>
             <li className='header__list__create-article'>
@@ -23,4 +25,3 @@ export default class Header extends Component {
     );
   }
 }
-
