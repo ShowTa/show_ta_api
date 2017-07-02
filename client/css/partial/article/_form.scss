@@ -1,0 +1,44 @@
+.article-form {
+  height: 100%;
+  text-align: center;
+
+  &__header {
+    position: relative;
+    text-align: left;
+
+    &__title {
+      display: inline;
+      font-size: 22px;
+    }
+
+    &__submit {
+      display: inline-block;
+      // position: absolute;
+      text-align: right;
+      right: 0;
+      padding: 8px 15px;
+      background-color: #40FF00;
+      border: 1px solid #40FF00;
+    }
+  }
+
+  &__input {
+    display: inline-block;
+    padding: 5px 3px;
+    width: 85vw;
+    border: 1px solid #000;
+    border-radius: 5px;
+    font-size: 28px;
+  }
+
+  .article-form__textarea {
+    display: inline-block;
+    padding: 5px 3px;
+    width: 85vw;
+    height: 60vh;
+    border: 1px solid #000;
+    border-radius: 5px;
+    resize: none;
+    font-size: 22px;
+  }
+}
