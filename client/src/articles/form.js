@@ -24,11 +24,13 @@ export default class Form extends Component {
 
   render() {
     return (
-      <div>
-        <p>記事を入力</p>
-        <input type='text' ref='title' />
-        <textarea type='text' ref='content' />
-        <button type='submit' onClick={this.postData.bind(this)}>Send</button>
+      <div className='article-form'>
+        <div className='article-form__header'>
+          <span className='article-form__header__title'>記事を入力</span>
+          <button className='article-form__header__submit' type='submit' onClick={this.postData.bind(this)}>Send</button>
+        </div>
+        <input className='article-form__input' type='text' ref='title' placeholder='タイトル' /><br />
+        <textarea className='article-form__textarea' type='text' ref='content' placeholder='学んだことを共有しよう' /><br />
       </div>
     );
   }
